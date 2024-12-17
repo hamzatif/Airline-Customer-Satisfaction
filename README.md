@@ -5,16 +5,12 @@ This project was developed during my internship to predict airline passenger sat
 
 The project explores multiple machine learning algorithms, evaluates their performance, and highlights actionable insights for improving airline operations.
 
----
-
 ## Features
 - **Dataset**: A comprehensive dataset containing features like inflight services, online boarding, and flight delays, alongside satisfaction labels.
 - **Models**:
   - Baseline models: Logistic Regression, Decision Tree
   - Advanced models: Random Forest, XGBoost, MLP Classifier
 - **Evaluation Metrics**: Accuracy, Precision, Recall, and F1-score
-
----
 
 ## Models and Results
 | Model                | Accuracy | Precision | Recall | F1-Score |
@@ -25,7 +21,6 @@ The project explores multiple machine learning algorithms, evaluates their perfo
 | XGBoost              | 96.3%    | 96.3%     | 96.3%  | 96.3%    |
 | MLP Classifier       | 95.6%    | 95.6%     | 95.6%  | 95.6%    |
 
----
 
 ## Applications and Insights
 
