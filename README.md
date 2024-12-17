@@ -1,76 +1,47 @@
-# Predicting Customer Airline Satisfaction using Machine Learning
+# Airline Passenger Satisfaction Prediction
 
+## Overview
+This project was developed during my internship to predict airline passenger satisfaction using machine learning models. The work was completed for a company that provides services to a major airline. The goal was to identify key drivers of customer satisfaction and build predictive models to assist in enhancing customer experiences.
 
-### Overview
-This project aims to build a machine learning model to predict customer satisfaction based on various factors related to their travel experience. The dataset includes a mix of demographic, travel, and service-related features. The goal is to help airlines improve customer experience by identifying key satisfaction drivers.
-
----
-
-### Dataset
-The dataset contains passenger-level data with features describing their travel experience and satisfaction levels. Below are key details:
-
-- **Target Variable**:
-  - `satisfaction`: Binary classification (`1` = Satisfied, `0` = Neutral or Dissatisfied).
-
-- **Key Features**:
-  - **Demographic**:
-    - `age`
-    - `Gender`
-  - **Travel Information**:
-    - `flight_distance`
-    - `departure_delay_in_minutes`
-    - `arrival_delay_in_minutes`
-  - **Service Ratings**:
-    - Ratings from `0` to `5` for:
-      - `inflight_wifi_service`
-      - `food_and_drink`
-      - `seat_comfort`
-      - And more.
+The project explores multiple machine learning algorithms, evaluates their performance, and highlights actionable insights for improving airline operations.
 
 ---
 
-### Project Steps
-
-#### 1. Data Cleaning
-- Removed unnecessary columns (e.g., unnamed index column).
-- Handled missing values:
-  - Imputed `arrival_delay_in_minutes` with the median.
-- Ensured data type consistency:
-  - Converted `arrival_delay_in_minutes` from float to integer.
-
-#### 2. Feature Engineering
-- Encoded categorical features using one-hot encoding.
-- Created a binary column:
-  - `customer_type_loyal` (`True` = Loyal, `False` = Disloyal).
-- Dropped redundant `customer_type_disloyal Customer` column.
-
-#### 3. Exploratory Data Analysis (EDA)
-- Analyzed the target variable distribution.
-  - Observed a slight class imbalance (56.55% Neutral/Dissatisfied, 43.45% Satisfied).
-- Key insights:
-  - Longer flights were associated with higher satisfaction.
-  - Higher ratings for `online_boarding` strongly correlated with satisfaction.
-  - Strong correlations existed between service-related features (e.g., `seat_comfort`, `inflight_entertainment`) and satisfaction.
+## Features
+- **Dataset**: A comprehensive dataset containing features like inflight services, online boarding, and flight delays, alongside satisfaction labels.
+- **Models**:
+  - Baseline models: Logistic Regression, Decision Tree
+  - Advanced models: Random Forest, XGBoost, MLP Classifier
+- **Evaluation Metrics**: Accuracy, Precision, Recall, F1-score, and ROC-AUC
 
 ---
 
-### Next Steps
+## Business Applications
+The insights and models developed provide significant value to the service provider for the airline. Below are the primary applications:
+1. **Customer Satisfaction Prediction**: Predict satisfaction levels in real-time to enable proactive responses to dissatisfied passengers.
+2. **Service Improvement**: Feature importance analysis identifies areas such as inflight entertainment and online boarding for targeted improvements.
+3. **Personalized Engagement**: Enable the creation of personalized offers and enhanced services for high-value customers.
 
-#### 4. Feature Scaling
-- Normalize or scale numerical features (e.g., delays, distances) to ensure consistency for model training.
+---
 
-#### 5. Modeling
-- **Baseline Models**:
-  - Logistic Regression
-  - Decision Trees
-- **Advanced Models**:
-  - Random Forest
-  - XGBoost
-  - Neural Networks
-- Use cross-validation for model evaluation and performance consistency.
+## Models and Results
+| Model                | Accuracy | Precision | Recall | F1-Score |
+|----------------------|----------|-----------|--------|----------|
+| Logistic Regression  | 87.5%    | 87.5%     | 87.5%  | 87.5%    |
+| Decision Tree        | 94.3%    | 94.3%     | 94.3%  | 94.3%    |
+| Random Forest        | 96.2%    | 96.2%     | 96.2%  | 96.2%    |
+| XGBoost              | 96.3%    | 96.3%     | 96.3%  | 96.3%    |
+| MLP Classifier       | 95.6%    | 95.6%     | 95.6%  | 95.6%    |
 
-#### 6. Evaluation
-- Evaluate models using:
-  - Accuracy
-  - Precision, Recall, F1-score
-- Address potential class imbalance using class weights or resampling.
+**Best Model**: XGBoost was the top-performing model, achieving a 96.3% score across all evaluation metrics.
+
+---
+
+## Key Insights
+- **Feature Importance**:
+  - The most critical factors influencing satisfaction are inflight entertainment, online boarding, and inflight service quality.
+  - These insights enable targeted improvements in customer service.
+- **Scalability**:
+  - The models are designed to scale and can be deployed in real-time systems via APIs for operational use.
+
+---
