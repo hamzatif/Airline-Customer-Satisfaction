@@ -12,7 +12,7 @@ The project explores multiple machine learning algorithms, evaluates their perfo
 - **Models**:
   - Baseline models: Logistic Regression, Decision Tree
   - Advanced models: Random Forest, XGBoost, MLP Classifier
-- **Evaluation Metrics**: Accuracy, Precision, Recall, F1-score, and ROC-AUC
+- **Evaluation Metrics**: Accuracy, Precision, Recall, and F1-score
 
 ---
 
