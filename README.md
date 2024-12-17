@@ -21,11 +21,10 @@ The project explores multiple machine learning algorithms, evaluates their perfo
 | XGBoost              | 96.3%    | 96.3%     | 96.3%  | 96.3%    |
 | MLP Classifier       | 95.6%    | 95.6%     | 95.6%  | 95.6%    |
 
-
-## Applications and Insights
-
 ### Best Model
 After extensive evaluation, the **XGBoost classifier** emerged as the best-performing model, achieving a **96.3% score** across key evaluation metrics: accuracy, precision, recall, and F1-score. Its robustness and ability to handle complex relationships between features make it an ideal candidate for deployment to address the airline's needs.
+
+## Applications and Insights
 
 ### Business Applications
 As part of this internship project, the insights and models developed can provide significant value to the customer, who serves as a key service provider for the airline. Below are the primary applications of this work:
