@@ -37,7 +37,7 @@ As part of this internship project, the insights and models developed can provid
 1. **Customer Satisfaction Prediction**:
    - The XGBoost model can be integrated into the customer’s systems, with compatibility for the airline's CRM, to predict customer satisfaction in real-time and proactively address passenger concerns.
 2. **Service Improvement**:
-   - The feature importance analysis highlights that inflight entertainment, online boarding, and inflight service quality are major drivers of satisfaction. By focusing on improving these areas, the airline can enhance overall customer experiences.
+   - The feature importance analysis highlights that reason for travel, quality of online boarding options, and inflight wifi service are major drivers of satisfaction. By focusing on improving these areas, the airline can enhance overall customer experiences.
 3. **Personalized Engagement**:
    - By identifying passengers likely to be dissatisfied, the airline can offer personalized services, such as exclusive offers or targeted interventions, to improve retention and loyalty.
 
@@ -58,8 +58,3 @@ To maximize the business value of this project, the following steps are recommen
    - Include additional features in the dataset, such as loyalty program membership and weather conditions, to further improve model predictions.
    - Implement a continuous learning pipeline to retrain the model periodically with updated data.
    - Explore additional advanced models or ensemble techniques for potentially higher performance.
-
-### Acknowledgments
-This project was completed during my internship, and I am grateful to [Company Name] for providing the opportunity to work on this impactful initiative. I extend my thanks to the team at [Company Name] for their support, guidance, and mentorship throughout this project.
-
-Additionally, I would like to acknowledge the customer organization for entrusting us with this data and project, allowing us to contribute to improving airline operations and passenger satisfaction.
